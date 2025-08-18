@@ -21,7 +21,7 @@
 
 ### Reads/Writes 
 
-- CSV files → wwritten with pandas.DataFrame.to_csv and read with pandas.read_csv 
+- CSV files → written with pandas.DataFrame.to_csv and read with pandas.read_csv 
 - Parquet files → written with pandas.DataFrame.to_parquet and read with pandas.read_parquet 
 
 File paths are automatically created based on environment variables defined in the '.env' file 
