@@ -81,6 +81,17 @@ The `data/` directory is organized as follows:
 - Column names in the source data may change, breaking downstream processing or validation.   
 - Parquet compatibility can vary across Python environments if different versions of `pyarrow` or `fastparquet` are used.  
 
+## Feature Engineering
+
+This project generates additional features based on raw SPX, VIX, and macroeconomic datasets to improve predictive modeling.  
+Below are the engineered features.
+
+- **`rv_21d_pct`**: Rolling standard deviation of daily log returns over approximately 1 trading month, annualized and expressed in percent. 
+
+- **`vrp_ratio`**: Ratio of implied volatility (VIX) to realized volatility minus 1. 
+
+- **`rate_shock_5d_bps`**: 5-business-day change in the 10-year yield, expressed in basis points. 
+
 ## Lifecycle Mapping
 Goal → Stage → Deliverable
 - Goal: Define volatility forecasting problem → Problem Framing & Scoping → Scoping paragraph + stakeholder context artifact + repo skeleton 
