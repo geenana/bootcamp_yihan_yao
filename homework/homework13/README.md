@@ -78,15 +78,18 @@ If no pre-trained model exists:
         - Request: 
         ```json 
         {"features": [spx_close, vix, dgs10, fedfunds, cpi, unrate, rv_21d_pct, vrp_ratio, rate_shock_5d_bps]}
+        ```
         - Response:
         ```json
         {"prediction": 0.12345}
+        ```
     - GET /plot: Returns example plots for SPX returns, VIX, and realized volatility embedded as images in HTML.
 
 - **Streamlit Dashboard**: 
     - Launch: 
     ```bash
     streamlit run app_streamlit.py
+    ```
     - Enter all 9 features in the number input fields.
     - Click Predict to see the predicted SPX return.
     - View example charts under the “Example SPX Return Trend” section.
