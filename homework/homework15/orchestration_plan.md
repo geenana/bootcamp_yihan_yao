@@ -53,7 +53,7 @@ ingest_data → clean_data → train_model → save_model → run_flask_api → 
 
 ## 5. Automation vs Manual Tasks
 
-### Automated Now
+### Automated
 
 - **Data ingestion**: scheduled downloads to ensure freshness.  
 - **Data cleaning & feature engineering**: deterministic transformations.  
