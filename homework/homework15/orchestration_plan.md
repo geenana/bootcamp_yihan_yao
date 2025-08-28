@@ -16,13 +16,7 @@
 
 ## 2. Task Order & Dependencies (DAG)
 
-ingest_data
-↓
-clean_data
-↓
-train_model → save_model → run_flask_api
-→ run_streamlit_dashboard
-→ generate_report
+ingest_data → clean_data → train_model → save_model → run_flask_api → run_streamlit_dashboard → generate_report
 
 - `generate_report` also depends on `clean_data` for input features.  
 - Both dashboards (`Flask` and `Streamlit`) depend on the saved model.
