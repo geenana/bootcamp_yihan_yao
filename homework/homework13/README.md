@@ -83,7 +83,7 @@ If no pre-trained model exists:
         ```json
         {"prediction": 0.12345}
         ```
-    - GET /plot: Returns example plots for SPX returns, VIX, and realized volatility embedded as images in HTML.
+    - GET/plot: Returns example plots for SPX returns, VIX, and realized volatility embedded as images in HTML.
 
 - **Streamlit Dashboard**: 
     - Launch: 
